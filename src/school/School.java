@@ -10,6 +10,8 @@ public class School {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Person aaroh = new Person("Aaroh", Person.Gender.MALE);
+        Person aaroh = new Person("Aaroh", Person.Gender.MALE, 155);
+        
+        System.out.println(aaroh);
     }
 }
