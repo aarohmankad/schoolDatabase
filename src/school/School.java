@@ -11,7 +11,12 @@ public class School {
      */
     public static void main(String[] args) {
         Person aaroh = new Person("Aaroh", Person.Gender.MALE, 155);
+        Person michael = new Person("Michael", Person.Gender.MALE, 130);
         
-        System.out.println(aaroh);
+        Person.printAll();
+        
+        Course compSci = new Course(2, Course.Type.ELECTIVE, "Computer Science");
+        
+        Course.printAll();
     }
 }

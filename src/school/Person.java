@@ -21,7 +21,7 @@ public class Person {
     private Gender gender;
     private int weight;
     
-    public static ArrayList people = new ArrayList();
+    private static ArrayList<Person> people = new ArrayList<>();
     
     Person() {
         name = "No Name";
@@ -79,9 +79,17 @@ public class Person {
         weight = _weight;
     };
  
+    public static void printAll() {
+        System.out.println("\nALL PEOPLE:\n");
+        for(Person person : people) {
+            System.out.println(person);
+        }
+    };
+    
     public String toString() {
         return "name: " + name + "\n" +
                 "gender: " + gender + "\n" +
-                "weight: " + weight;
-    }
+                "weight: " + weight + "\n" + 
+                "----------------------------";
+    };
 }
